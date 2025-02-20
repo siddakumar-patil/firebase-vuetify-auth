@@ -44,7 +44,7 @@
               <Register />
             </v-tab-item>
 
-            <v-tab-item v-if="(isResetPasswordScreenShown || !isUserRegistrationAllowed) && !config.email" class="pt-5">
+            <v-tab-item v-else class="pt-5">
               <PasswordReset />
             </v-tab-item>
           </v-tabs-items>
